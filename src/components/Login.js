@@ -1,5 +1,5 @@
 import React from 'react';
-import { GoogleOutlined, FacebookOutlined } from '@ant-design/icons';
+import { GoogleOutlined, GithubOutlined } from '@ant-design/icons';
 import 'firebase/app';
 
 import { auth } from '../firebase';
@@ -21,9 +21,9 @@ const Login = () => {
 
                 <div 
                     className="login-button facebook"
-                    onClick={() => auth.signInWithRedirect(new firebase.auth.FacebookAuthProvider())}
+                    onClick={() => auth.signInWithRedirect(new firebase.auth.GithubAuthProvider())}
                 >
-                    <FacebookOutlined /> Sign In with Facebook
+                    <GithubOutlined /> Sign In with GitHub
                 </div>
             </div>
         </div>
